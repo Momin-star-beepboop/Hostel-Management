@@ -1,0 +1,23 @@
+.complaint-box {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px ;
+    border-radius: 8px;
+    color: cyan;
+    background-color:rgba(58, 143, 41, 0.7);
+    margin-top: 250px;
+}
+
+.success-message {
+    color: rgb(0, 247, 255);
+}
+
+.error-message {
+    color: red;
+}
+
+.go-back-link {
+    display: block;
+    margin-top: 10px;
+}

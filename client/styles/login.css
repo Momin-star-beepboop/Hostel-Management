@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.navbar {
+    display: flex;
+    font-family: 'Bebas Neue', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 15px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px; 
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    color: rgba(30, 159, 198, 1);
+}
+
+body {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(39, 39, 39, 0.65)),
+        url(../hostel.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.login-page {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+::placeholder {
+    color: white;
+    font-weight: lighter;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.login-header {
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    font-family: 'Smooch Sans', sans-serif;
+    margin-left: -500px;
+}
+
+.form {
+    background-color: rgba(55, 55, 59, 0.8);
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    margin-left: -500px;
+    padding: 0px 100px 20px 100px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.form:hover {
+    transform: scale(1.05);
+    background-color: rgba(75, 75, 79, 0.2);
+}
+
+.user-inp {
+    border-radius: 15px;
+    background-color: rgb(43, 43, 43,1);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin-top: 30px;
+    width: 250px;
+    border-style: solid;
+    margin-left: -150px;
+
+
+    /* align-items: center; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pass-inp {
+    border-radius: 15px;
+    background-color: rgb(43,43,43,1);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-left: -150px;
+    width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: lighter;
+    border-style: solid;
+}
+
+.sub-button {
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(30, 159, 198, 1);
+    color: white;
+    padding: 5px 5px 5px;
+    margin-bottom: 20px;
+    margin-left: -75px;
+    margin-right: 100px;
+    width: 100px;
+    border-color: rgba(30, 159, 198, 1);
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.question {
+    margin-left: -1200px;
+    margin-top: 10px;
+    color: white;
+}
+
+a {
+    color: rgb(30, 159, 198, 1);
+}
+
+.lib-name {
+    color: rgb(30, 159, 198, 1);
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.sub-button:hover {
+    background-color: rgba(30, 159, 198, 0.8);
+    border-color: rgba(30, 159, 198, 0.8);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.user-inp,
+.pass-inp {
+    transition: background-color 0.3s ease;
+}
+
+.user-inp:hover,
+.pass-inp:hover {
+    background-color: rgba(112, 112, 115, 0.8);
+}
+
+@keyframes floatFromLeft {
+    from {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.login-page,
+.form,
+.login-header,
+.user-inp,
+.pass-inp,
+.sub-button,
+.question {
+    animation: floatFromLeft 0.7s ease-out;
+}
+
+.login-page,
+.form,
+.login-header,
+.user-inp,
+.pass-inp,
+.sub-button,
+.question {
+    position: relative;
+    right: -20%;
+}
+
+.sub-button1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: rgba(30, 159, 198, 1);
+    color: white;
+    padding: 5px 5px 5px;
+    margin-bottom: 20px;
+    width: 100px;
+    border-style: solid;
+    border-color: rgba(30, 159, 198, 1);
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sub-button1:hover {
+    background-color: rgba(30, 159, 198, 0.856);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.login-message {
+    margin-top: 10px;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: -850px;
+    text-align: center;
+}
